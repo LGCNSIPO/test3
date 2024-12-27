@@ -14,5 +14,12 @@
             "stockPrice": 45000,
             "sharesOwned": 50
         }
+        {
+            "name": "노무연",
+            "combo": "키움증권",
+            "account": "53279516",
+            "stockPrice": 61900,
+            "sharesOwned": 3
+        }
     ]
 }
