@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>LG CNS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <body class="account-page">
+
+    <a href="index.html" class="logo-link">
+        <div class="logo-container">
+            <img src="images/logo_2x.png" alt="로고" class="logo">
+        </div>
+    </a>    
+
+    <div class="back-button-container">
+        <a href="javascript:history.back()">←뒤로가기</a>
+    </div>
+    
+    <div class="login-container">
+        <h2 class="section-divider"></h2> <!-- 긴 선으로 활용할 클래스 추가 -->
+        <h1><span id="welcome-user"></span>님이 보유하고 계시는</h1>
+        <h1>LG CNS 증권을 확인하세요.</h1>
+
+        <div class="banner-container">
+            <div class="banner">
+                <img src="images/banner.png" alt="배너 이미지">
+            </div>
+        </div>
+
+        <hr class="gray-line">
+
+        <div class="youtube-container">
+            <h2 class="section-divider"></h2>
+            <h1>더 나은 세상을 향하여</h1>
+            <div class="youtube-wrapper">
+                <!-- 유튜브 iframe -->
+                <iframe 
+                    width="100%" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/B3u8O4CwV9M" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <p>DX 전문기업, LG CNS는 고객과 함께 DX로 성장하는 Digital Business Innovator입니다. 본 페이지는 아래와 같은 기관의 서명 및 API를 불러옵니다.</p>
+
+        <div class="scrolling-container">
+            <div class="scrolling-content">
+                <img src="images/long.png" alt="Scrolling Image">
+                <img src="images/long.png" alt="Scrolling Image">
+            </div>
+        </div>  
+
+            <hr class="gray-line">
+
+    <div class="account-container">
+        <h1>보유 주식 정보</h1>
+        <div id="user-info">
+            <p><strong>주주 이름:</strong> <span id="user-name"></span></p>
+            <p><strong>증권 계좌:</strong> <span id="user-account"></span></p>
+            <p><strong>증권사:</strong> <span id="user-combo"></span></p> <!-- 증권사 추가 -->
+            <p><strong>1주당 주식 가격:</strong> <span id="stock-price"></span>원</p>
+            <p><strong>보유 주수:</strong> <span id="shares-owned"></span>주</p>
+            <p><strong>평가 금액:</strong> <span id="evaluated-amount"></span>원</p>
+        </div>
+    </div>
+
+    <p class="watermark">위 정보는 LG CNS 및 한국예탁결제원에서 보증하는 KSD 증권 내역으로서, 타인이 본인의 의사에 반하여 해당 정보를 악용할 경우 관련 법률에 의해 처벌받을 수 있습니다.</p>
+
+    <hr class="gray-line">
+
+    <div class="image-container">
+    <h2 class="section-divider"></h2>
+    <h1>주주현황</h1>
+    <div class="image-wrapper">
+        <!-- 이미지 삽입 -->
+        <img src="images/chart.png" alt="대체 텍스트" width="100%" height="315">
+    </div>
+</div>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <td colspan="2">분류</td>
+                <th>보유주수 (주)</th>
+                <th>지분율 (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">㈜LG</td>
+                <td>43,557,218</td>
+                <td>44.96</td>
+            </tr>
+            <tr>
+                <td rowspan="3">특수관계</td>
+                <td>기존 구주권자</td>
+                <td>1,021,269</td>
+                <td>1.05</td>
+            </tr>
+            <tr>
+                <td>크리스탈코리아유한회사외 1인</td>
+                <td>20,831,479</td>
+                <td>21.50</td>
+            </tr>
+            <tr>
+                <td>우리사주조합</td>
+                <td>4,850,233</td>
+                <td>5.01</td>
+            </tr>
+            <td colspan="2">기타</td>
+            <td>11,123,997</td>
+            <td>11.48</td>
+        </tr>
+        <td colspan="2">공모주주</td>
+        <td>15,501,752</td>
+        <td>16.00</td>
+    </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- 로고 및 탑 버튼 -->
+            <div class="footer-top">
+                <a href="index.html">
+                    <img src="images/logo_2x.png" alt="로고" class="footer-logo">
+                </a>
+                <a href="#" class="top-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ TOP</a>
+            </div>
+            <hr class="footer-divider">
+            
+            <!-- 하단 텍스트 링크 -->
+            <div class="footer-links">
+                <a href="mailto:lgconsultingemail@gmail.com" class="footer-link">문의하기</a>
+                <a href="privacy-policy.html" class="footer-link">개인정보처리방침</a>
+            </div>
+            
+            <!-- 텍스트 및 저작권 -->
+            <div class="footer-text">
+                <p>서울시 강서구 마곡중앙8로 71 LG 사이언스파크 E13, E14<br>Copyright LG CNS. All Rights Reserved</p>
+            </div>
+            
+    <!-- 아이콘 -->
+    <div class="footer-icons">
+        <a href="https://www.youtube.com/user/lgcnstube" class="footer-icon" target="_blank">
+            <img src="images/icon_youtube.png" alt="아이콘 1">
+        </a>
+        <a href="https://www.facebook.com/lgcnskorea" class="footer-icon" target="_blank">
+            <img src="images/icon_facebook.png" alt="아이콘 2">
+        </a>
+        <a href="https://www.instagram.com/lgcns_kr/#" class="footer-icon" target="_blank">
+            <img src="images/icon_instagram.png" alt="아이콘 3">
+        </a>
+        <a href="https://www.linkedin.com/company/lgcns" class="footer-icon" target="_blank">
+            <img src="images/icon_linkedin.png" alt="아이콘 4">
+        </a>
+        <a href="https://post.naver.com/lgcns_official" class="footer-icon" target="_blank">
+            <img src="images/icon_naver.png" alt="아이콘 5">
+        </a>
+    </div>
+        </div>
+    </footer>
+
+    <!-- login.js를 먼저 로드 -->
+    <script src="login.js"></script>
+    <script src="account.js"></script>
+
+</body>
+</html>
